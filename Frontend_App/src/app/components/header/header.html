@@ -13,45 +13,40 @@
       <ul class="navbar__list js-nav" [class.open]="mobileMenuOpen">
         <!-- Primary group (center navigation links) -->
         <li class="navbar__item navbar__primary js-primary">
-          <a  class="navbar__link" routerLink="/dashboard">{{ 'nav.dashboard' | translate }}</a>
+          <a  class="navbar__link" routerLink="/dashboard">{{ 'Home'}}</a>
 
-          <!-- Dropdown: Resource -->
-          <div class="dropdown-wrapper" [class.open]="dropdownOpenResource">
-            <a class="navbar__link dropdown-toggle" (click)="toggleDropdown('resource', $event)">
-              {{ 'nav.resource.title' | translate }} <span class="caret">▾</span>
-            </a>
-            <div class="dropdown" *ngIf=" dropdownOpenResource">
-              <a class="dropdown__item" routerLink="/crane-resources" (click)="closeDropdown()">{{
-                'nav.resource.craneResources' | translate }}</a>
-              <a class="dropdown__item" routerLink="/truck-resources" (click)="closeDropdown()">{{
-                'nav.resource.truckResources' | translate }}</a>
-              <a class="dropdown__item" routerLink="/vessel" (click)="closeDropdown()">{{ 'nav.resource.vessels' |
-                translate }}</a>
-              <a class="dropdown__item" routerLink="/vessel-type" (click)="closeDropdown()">{{ 'nav.resource.vesselTypes' |
-                translate }}</a>
-              <a class="dropdown__item" routerLink="/docks" (click)="closeDropdown()">{{ 'nav.resource.docks' |
-                translate }}</a>
-              <a class="dropdown__item" routerLink="/warehouses" (click)="closeDropdown()">{{
-                'nav.resource.warehouses' | translate }}</a>
-              <a class="dropdown__item" routerLink="/container-yards" (click)="closeDropdown()">{{
-              'nav.resource.containerYards' | translate }}</a>
-              <a class="dropdown__item" routerLink="/qualifications" (click)="closeDropdown()">{{
-              'nav.resource.qualifications' | translate }}</a>
+          <!-- Dropdown: Football -->
+        <div class="dropdown-wrapper" [class.open]="dropdownOpenFootball">
+          <a class="navbar__link dropdown-toggle" (click)="toggleDropdown('football', $event)">
+            {{ 'Football'}} <span class="caret">▾</span>
+          </a>
+        
+          <div class="dropdown" *ngIf="dropdownOpenFootball">
+          
+            <!-- LOOP DECADES -->
+            <div *ngFor="let decade of fifaDecades">
+              <a (click)="toggleFIFADecade(decade.value); $event.stopPropagation(); $event.preventDefault();">
+                {{ decade.label }} <span class="caret">></span>
+              </a>
+            
+              <!-- LOOP FIFA GAMES INSIDE DECADE -->
+              <div class="dropdown sub-dropdown" *ngIf="openDecade === decade.value">
+                <a
+                  class="dropdown__item"
+                  *ngFor="let game of decade.games"
+                  [routerLink]="['/fifa', game.route]"
+                  (click)="closeDropdown(); $event.stopPropagation();"
+                >
+                  {{ game.name }}
+                </a>
+              </div>
             </div>
+          
           </div>
+        </div>
 
-          <!-- Dropdown: Organizations -->
-          <div class="dropdown-wrapper" [class.open]="dropdownOpenOrganizations">
-            <a class="navbar__link dropdown-toggle" (click)="toggleDropdown('organizations', $event)">
-              {{ 'nav.organizations.title' | translate }} <span class="caret">▾</span>
-            </a>
-            <div class="dropdown" *ngIf="dropdownOpenOrganizations">
-              <a class="dropdown__item" routerLink="/organization" (click)="closeDropdown()">{{
-                'nav.organizations.manage' | translate }}</a>
-              <a class="dropdown__item" routerLink="/vessel-visit-notification" (click)="closeDropdown()">{{
-                'nav.organizations.notifications' | translate }}</a>
-            </div>
-          </div>
+
+
         </li>
       </ul>
     </div>

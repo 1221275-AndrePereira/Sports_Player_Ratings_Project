@@ -1,0 +1,69 @@
+<div class="fifa96-container">
+
+  <!-- HEADER AND ACTION BUTTONS -->
+  <div class="fifa96-header">
+    <h2>{{ 'FIFA 96 Ratings' }}</h2>
+  </div>
+
+  <!-- LOADING INDICATOR -->
+  <div class="loading-overlay" *ngIf="isLoading">
+    <div class="spinner"></div>
+    <span>{{ 'Loading' }}</span>
+  </div>
+
+  <!-- TOAST / STATUS MESSAGES -->
+  <div class="fifa96-toast" *ngIf="statusMessage" [ngClass]="statusMessageType">
+    {{ statusMessage }}
+  </div>
+
+  <!-- TEMPORARY ALERTS (e.g., "No results found") -->
+  <div class="fifa96-alert" *ngIf="showAlert">
+    {{ alertMessage }}
+  </div>
+
+  <!-- TABLE OF FIFA 96 PLAYERS -->
+  <div class="table-container" [class.dimmed]="isLoading">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>{{ 'Player' }}</th>
+          <th>{{ 'Country' }}</th>
+          <th>{{ 'FIFA 96 Rating' }}</th>
+          <th>{{ 'FIFA 96 Club' }}</th>
+          <th>{{ 'FIFA 96 Position' }}</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let fp of filteredFootballPlayers"
+          [class.selected]="selectedFootballPlayer?.playerId === fp.playerId"
+        >
+          <td>{{ fp.playerName }}</td>
+          <td>
+            <img *ngIf="fp.country" [src]="getFlagPath(fp.country)" alt="{{ fp.country }}" class="flag-icon" />
+            {{ fp.country }}
+          </td>
+          <td>{{ fp.fifA96Rating?.overallRating }}</td>
+          <td>
+            <img *ngIf="fp.fifA96Rating?.club" [src]="getClubPath(fp.fifA96Rating?.club)" alt="{{ fp.fifA96Rating?.club }}" class="club-icon" />
+            {{ fp.fifA96Rating?.club }}
+          </td>
+          <td>{{ fp.fifA96Rating?.position }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- NO RESULTS MESSAGE -->
+    <div *ngIf="!isLoading && filteredFootballPlayers.length === 0" class="no-results">
+      <p>
+        {{
+          searchTerm
+            ? ('common.noResultsFor')
+            : ('FIFA 96 has no players')
+        }}
+      </p>
+    </div>
+  </div>
+
+</div>

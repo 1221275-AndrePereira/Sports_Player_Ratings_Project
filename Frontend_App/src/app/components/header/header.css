@@ -211,6 +211,43 @@
   font-weight: 700;
 }
 
+/* --- SIDE SUB-DROPDOWN (DESKTOP ONLY) --- */
+@media (min-width: 992px) {
+
+  
+  .dropdown > div {
+    position: relative;
+    padding: 8px 14px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 180px;
+    background: #fff;
+    border: 1px solid rgba(0,0,0,0.08);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border-radius: 8px;
+    padding: 6px 0;
+    z-index: 3000;
+    display: flex;
+    flex-direction: column;
+  }
+
+  
+  .sub-dropdown .dropdown__item {
+    padding: 8px 14px;
+    white-space: nowrap;
+  }
+
+  .sub-dropdown .dropdown__item:hover {
+    background: #f5f8ff;
+    color: var(--main-blue);
+  }
+}
+
 /* --- responsive behavior --- */
 @media (max-width: 991px) {
   .navbar__container {
