@@ -1,0 +1,59 @@
+<header class="main_header">
+  <nav class="navbar">
+    <div class="navbar__container container-no-bt">
+      <!-- Brand logo (navigates home) -->
+      <a routerLink="/" class="navbar__logo-img">
+        <img src="assets/img/logv3_cropped.png" loading="lazy" alt="Logo" />
+      </a>
+
+      <!-- Hamburger button toggles mobile menu visibility -->
+      <button class="navbar__toggle" (click)="toggleMobileMenu($event)">☰</button>
+
+      <!-- Main navigation list; .open is applied on mobile -->
+      <ul class="navbar__list js-nav" [class.open]="mobileMenuOpen">
+        <!-- Primary group (center navigation links) -->
+        <li class="navbar__item navbar__primary js-primary">
+          <a  class="navbar__link" routerLink="/dashboard">{{ 'nav.dashboard' | translate }}</a>
+
+          <!-- Dropdown: Resource -->
+          <div class="dropdown-wrapper" [class.open]="dropdownOpenResource">
+            <a class="navbar__link dropdown-toggle" (click)="toggleDropdown('resource', $event)">
+              {{ 'nav.resource.title' | translate }} <span class="caret">▾</span>
+            </a>
+            <div class="dropdown" *ngIf=" dropdownOpenResource">
+              <a class="dropdown__item" routerLink="/crane-resources" (click)="closeDropdown()">{{
+                'nav.resource.craneResources' | translate }}</a>
+              <a class="dropdown__item" routerLink="/truck-resources" (click)="closeDropdown()">{{
+                'nav.resource.truckResources' | translate }}</a>
+              <a class="dropdown__item" routerLink="/vessel" (click)="closeDropdown()">{{ 'nav.resource.vessels' |
+                translate }}</a>
+              <a class="dropdown__item" routerLink="/vessel-type" (click)="closeDropdown()">{{ 'nav.resource.vesselTypes' |
+                translate }}</a>
+              <a class="dropdown__item" routerLink="/docks" (click)="closeDropdown()">{{ 'nav.resource.docks' |
+                translate }}</a>
+              <a class="dropdown__item" routerLink="/warehouses" (click)="closeDropdown()">{{
+                'nav.resource.warehouses' | translate }}</a>
+              <a class="dropdown__item" routerLink="/container-yards" (click)="closeDropdown()">{{
+              'nav.resource.containerYards' | translate }}</a>
+              <a class="dropdown__item" routerLink="/qualifications" (click)="closeDropdown()">{{
+              'nav.resource.qualifications' | translate }}</a>
+            </div>
+          </div>
+
+          <!-- Dropdown: Organizations -->
+          <div class="dropdown-wrapper" [class.open]="dropdownOpenOrganizations">
+            <a class="navbar__link dropdown-toggle" (click)="toggleDropdown('organizations', $event)">
+              {{ 'nav.organizations.title' | translate }} <span class="caret">▾</span>
+            </a>
+            <div class="dropdown" *ngIf="dropdownOpenOrganizations">
+              <a class="dropdown__item" routerLink="/organization" (click)="closeDropdown()">{{
+                'nav.organizations.manage' | translate }}</a>
+              <a class="dropdown__item" routerLink="/vessel-visit-notification" (click)="closeDropdown()">{{
+                'nav.organizations.notifications' | translate }}</a>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>

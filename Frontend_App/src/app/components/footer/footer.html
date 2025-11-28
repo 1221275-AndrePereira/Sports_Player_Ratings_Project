@@ -1,0 +1,29 @@
+<footer class="footer-container">
+	<div class="footer-brand">
+		<div class="company-name" routerLink="/company-name">{{ 'footer.company-name' | translate }}</div>
+	</div>
+
+	<div class="footer-contact">
+		<div class="company-contact"><a href="tel:+351936464948">+351 936464948</a></div>
+		<div class="company-email"><a href="mailto:andrecpereira24@gmail.com">andrecpereira24@gmail.com</a></div>
+	</div>
+
+	<div class="footer-links">
+		<ul>
+			<li><a href="https://github.com/Departamento-de-Engenharia-Informatica/LEI-SEM5-PI-2025-26-3DG-04/blob/main/docs/readme.md" routerLink="/development-team" >{{ 'footer.development-group' | translate }}</a></li>
+		</ul>
+	</div>
+
+	<div class="footer-social">
+		<a href="https://github.com/Departamento-de-Engenharia-Informatica/LEI-SEM5-PI-2025-26-3DG-04" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a>
+		<a href="https://www.linkedin.com" aria-label="LinkedIn">LinkedIn</a>
+	</div>
+
+	<div class="footer-bottom">
+		<div class="footer-actions">
+			<!-- Remove routerLink so button only scrolls, and set explicit type to avoid accidental form submit -->
+			<button type="button" class="back-to-top" (click)="scrollTop()">{{ 'footer.back-to-top' | translate }}</button>
+		</div>
+	</div>
+
+</footer>

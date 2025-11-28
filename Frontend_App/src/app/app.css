@@ -1,0 +1,17 @@
+/* Ensure the app root fills the viewport and pushes footer to the bottom when content is short */
+:host {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.app-main {
+	/* main content grows to fill available space so footer is pushed down */
+	flex: 1 1 auto;
+	display: block;
+}
+
+/* Small safety: ensure router-outlet content doesn't collapse */
+:host ::ng-deep router-outlet + * {
+	display: block;
+}

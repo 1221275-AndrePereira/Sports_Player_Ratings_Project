@@ -13,9 +13,8 @@ Include ratings for all players in each game.
 
 ## How to run
 
-For now, you need to run the backend by clicking CTRL+F5.
-Open a cmd terminal in Visual Studio Code and do "docker compose up --build -d". You must have Docker app installed on your PC.
-Run the command "cd Frontend_App" and then the command "ng serve --open".
+For now, you need to run the backend by clicking CTRL+F5 and choosing more C# options and then WebApi(https).
+Open a cmd terminal in Visual Studio Code and run the command "cd Frontend_App" and then the command "ng serve --open".
 
 
 ## Disclaimer

@@ -1,0 +1,16 @@
+{
+  "common": {
+    "select": "Select",
+    "unselect": "Unselect",
+    "noneSpecified": "None specified",
+    "loading": "Loading"
+  },
+  "nav": {
+    
+  },
+  "footer": {
+    "company-name": "Rating Company",
+    "development-group": "Development Group",
+    "back-to-top": "Back to Top"
+  }
+}

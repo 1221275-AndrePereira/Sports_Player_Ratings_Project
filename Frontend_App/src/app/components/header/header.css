@@ -1,0 +1,330 @@
+/* Header component styles
+   - Defines layout, theming vars, and z-index layering for the top navigation
+   - Desktop: dropdowns are absolute-positioned menus
+   - Mobile (≤991px): menus behave like an accordion stacked vertically
+     • *ngIf in the template controls rendering (presence/absence)
+     • .open class on wrapper is used for caret rotation and spacing only
+   - Breakpoints: 991px (mobile layout), 480px (very small tweaks)
+*/
+
+.main_header {
+  z-index: 1000;
+  font-family: Montserrat, sans-serif;
+  border-bottom: 3px solid #fff;
+  position: relative;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  text-align: left;
+  display: block;
+}
+
+.navbar {
+  background: transparent !important;
+  position: relative;
+  z-index: 10;
+  box-shadow: none;
+  --main-blue: #0088ff;
+  --main-dark: #000c37;
+  --main-danger: #f52c5c;
+  --color-type1: #02bcb1;
+  --color-grey: #f5f8ff;
+  --color-storm: #6e7e92;
+  display: block;
+}
+
+.container-no-bt {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0 15px;
+  z-index: 1;
+}
+
+/* --- main layout structure --- */
+.navbar__container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+/* logo (left) */
+.navbar__logo-img img {
+  width: 100px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+/* hamburger button (mobile) */
+.navbar__toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: var(--main-dark);
+  z-index: 1700;
+}
+
+/* main list container */
+.navbar__list {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  justify-content: center;
+}
+
+/* primary group (center navigation) */
+.navbar__primary {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  white-space: nowrap;
+  justify-content: center;
+}
+
+/* secondary group (sign-in + language) */
+.navbar__secondary {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-left: auto;
+}
+
+/* top-level nav links */
+.navbar__link {
+  display: inline-flex;
+  align-items: center;
+  height: 32px;
+  padding: 5px 14px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--main-dark);
+  transition: color 0.25s ease;
+}
+
+/* Sign in button */
+.navbar__item_signIn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--main-dark);
+  background-color: #eff1f6;
+  border-radius: 10px;
+  transition: background-color 0.25s ease;
+}
+
+.navbar__item_signIn:hover {
+  background-color: #e4e6ec;
+}
+
+/* reset: remove link underlines */
+.navbar a,
+.navbar a:visited,
+.navbar a:hover,
+.navbar__link,
+.dropdown__item,
+.navbar__item_signIn {
+  text-decoration: none !important;
+}
+
+/* hover: color only */
+.navbar a:hover,
+.navbar__link:hover,
+.dropdown__item:hover {
+  text-decoration: none;
+  color: var(--main-blue);
+}
+
+/* --- dropdowns --- */
+.dropdown-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+}
+
+.caret {
+  margin-left: 6px;
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.dropdown {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  min-width: 180px;
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+  padding: 6px 0;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown__item {
+  padding: 8px 14px;
+  color: var(--main-dark);
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown__item:hover {
+  background: #f5f8ff;
+  color: var(--main-blue);
+}
+
+/* --- language dropdown --- */
+.lang-dropdown-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.lang-dropdown-wrapper .dropdown {
+  top: 40px;
+  right: 0;
+  left: auto;
+  min-width: 90px;
+}
+
+.lang-dropdown-wrapper .dropdown__item {
+  font-weight: 700;
+}
+
+/* --- responsive behavior --- */
+@media (max-width: 991px) {
+  .navbar__container {
+    flex-wrap: wrap;
+    padding: 0 20px;
+  }
+
+  .navbar__toggle {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar__list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #e0e0e0;
+    padding: 12px 0;
+  }
+
+  .navbar__list.open {
+    display: flex;
+  }
+
+  .navbar__primary,
+  .navbar__secondary {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .navbar__link,
+  .navbar__item_signIn {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+  .navbar__item_signIn {
+    background-color: #eff1f6;
+    border-radius: 8px;
+    margin: 6px 0;
+  }
+
+  /* Mobile accordion behavior
+     - Dropdown wrapper stacks vertically and stretches full width
+     - .open on wrapper rotates caret only (visual cue)
+     - .dropdown becomes static so it pushes content below
+  */
+  .dropdown-wrapper,
+  .lang-dropdown-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .dropdown-toggle {
+    display: inline-flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .caret {
+    transition: transform .25s ease;
+  }
+
+  .dropdown-wrapper.open .caret,
+  .lang-dropdown-wrapper.open .caret {
+    transform: rotate(180deg);
+  }
+
+  .dropdown {
+    position: static;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    width: 100%;
+    display: flex;               /* occupies space below (accordion) */
+    flex-direction: column;
+    margin-top: 4px;
+    animation: accordion-open .2s ease;
+  }
+
+  .dropdown__item {
+    padding-left: 32px;
+    width: 100%;
+  }
+
+  .dropdown-wrapper:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  .lang-dropdown-wrapper {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
+@keyframes accordion-open {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- very small screens --- */
+@media (max-width: 480px) {
+  .navbar__container {
+    padding: 0 12px;
+  }
+
+  .navbar__link,
+  .navbar__item_signIn {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,45 @@
+name: .NET Core API CI/CD
+
+on:
+  push:
+    branches: [ "main","SprintB"]
+  pull_request:
+    branches: [ "main","SprintB"]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        configuration: [Debug, Release]
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v4
+      with:
+        dotnet-version: 8.0.x
+
+    - name: Restore dependencies
+      run: dotnet restore Backend_App/Absantee.sln
+
+    - name: Build
+      run: dotnet build Backend_App/Absantee.sln --configuration ${{ matrix.configuration }} --no-restore
+
+    - name: Run tests
+      run: dotnet test Backend_App/Absantee.sln --configuration ${{ matrix.configuration }} --no-build --verbosity normal
+
+    - name: Publish API
+      run: dotnet publish Backend_App/WebApi/WebApi.csproj --configuration ${{ matrix.configuration }} --output ./publish
+
+    - name: Upload published app
+      uses: actions/upload-artifact@v4
+      with:
+        name: webApi-${{ matrix.configuration }}
+        path: ./publish

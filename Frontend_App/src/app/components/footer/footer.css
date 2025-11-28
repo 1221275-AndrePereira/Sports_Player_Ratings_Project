@@ -1,0 +1,143 @@
+
+:host {
+  /* Keep footer in the normal document flow so it doesn't overlap page content */
+  position: static;
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 1000; /* align with header stacking */
+  font-family: Montserrat, sans-serif;
+  --main-blue: #0088ff;
+  --main-dark: #000c37;
+  --card-bg: #ffffff;
+  --accent: #02bcb1;
+  background: linear-gradient(180deg, #F7FAFC 0%, #E9EEF2 100%);
+  color: var(--main-dark);
+  padding: 1rem 0.75rem;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px; /* match header horizontal rhythm */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.footer-col {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 180px;
+}
+
+.footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.company-name {
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--main-dark);
+}
+
+.slogan {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  color: rgba(0,12,55,0.85);
+}
+.address {
+  font-size: 0.85rem;
+  margin-top: 0.25rem;
+  color: var(--main-dark);
+}
+
+.footer-contact { font-size: 0.95rem; }
+.footer-links { font-size: 0.95rem; }
+.footer-links h4 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--main-dark);
+}
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-links li {
+  margin: 0.15rem 0;
+}
+.footer-links a {
+  color: var(--main-dark);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  border-bottom: 1px dotted rgba(0,0,0,0.04);
+}
+.footer-links a:hover,
+.footer-links a:focus {
+  color: var(--main-blue);
+  text-decoration: none;
+}
+
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.footer-social a {
+  color: var(--main-dark);
+  margin-right: 0.5rem;
+  text-decoration: none;
+}
+.footer-social a:hover { color: var(--main-blue); }
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(0,12,55,0.06);
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.copyright { font-size: 0.82rem; color: rgba(0,12,55,0.8); }
+.back-to-top {
+  background: var(--main-blue);
+  color: #fff;
+  border: 1px solid rgba(255,255,255,0.06);
+  padding: 0.45rem 0.75rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 700;
+}
+.back-to-top:hover { filter: brightness(0.95); }
+
+/* Responsive: stack columns and keep footer readable on small screens */
+@media (max-width: 991px) {
+  :host { position: static; padding: 1rem 0.5rem; }
+  .footer-container { flex-direction: column; gap: 12px; padding: 0 12px; }
+  .footer-bottom { flex-direction: column; gap: 8px; align-items: flex-start; }
+  .back-to-top { align-self: flex-end; }
+}
+
+@media (max-width: 480px) {
+  .company-name { font-size: 0.98rem; }
+  .slogan, .address { font-size: 0.86rem; }
+  .back-to-top { padding: 0.4rem 0.6rem; }
+}
+
+
