@@ -26,11 +26,25 @@
     <table class="data-table">
       <thead>
         <tr>
-          <th>{{ 'Player' }}</th>
-          <th>{{ 'Country' }}</th>
-          <th>{{ 'FIFA 96 Rating' }}</th>
-          <th>{{ 'FIFA 96 Club' }}</th>
-          <th>{{ 'FIFA 96 Position' }}</th>
+          <th (click)="sortBy('playerName')" class="sortable">
+            {{ 'Player' }}  {{ getSortIcon('playerName') }}
+          </th>
+
+          <th (click)="sortBy('country')" class="sortable">
+            {{ 'Country' }}  {{ getSortIcon('country') }}
+          </th>
+
+          <th (click)="sortBy('rating')" class="sortable">
+            {{ 'FIFA 96 Rating' }}  {{ getSortIcon('rating') }}
+          </th>
+
+          <th (click)="sortBy('club')" class="sortable">
+            {{ 'FIFA 96 Club' }}  {{ getSortIcon('club') }}
+          </th>
+
+          <th (click)="sortBy('position')" class="sortable">
+            {{ 'FIFA 96 Position' }}  {{ getSortIcon('position') }}
+          </th>
           <th></th>
         </tr>
       </thead>

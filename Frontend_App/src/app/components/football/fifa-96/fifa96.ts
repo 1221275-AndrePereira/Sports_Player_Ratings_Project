@@ -35,6 +35,9 @@ export class FIFA96Component implements OnInit {
     statusMessage: string = '';
     statusMessageType: 'success' | 'error' | '' = '';
     statusHiding: boolean = false;
+
+    sortColumn: string = '';
+    sortDirection: 'asc' | 'desc' = 'asc';
   
   
     private destroy$ = new Subject<void>();
@@ -96,4 +99,64 @@ export class FIFA96Component implements OnInit {
       const clubName = club ?? 'default';
       return 'assets/clubs/' + clubName.toLowerCase().replace(/ /g, '-') + '.png';
     }
+
+    // ====================== SORTING ======================
+  sortBy(column: 'playerName' | 'country' | 'rating' | 'club' | 'position') {
+
+    
+    if (this.sortColumn === column) {
+      this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
+    } else {
+      
+      this.sortColumn = column;
+      this.sortDirection = 'asc';
+    }
+
+    this.filteredFootballPlayers.sort((a, b) => {
+
+      let valueA: any;
+      let valueB: any;
+
+      switch (column) {
+        case 'playerName':
+          valueA = a.playerName ?? '';
+          valueB = b.playerName ?? '';
+          break;
+
+        case 'country':
+          valueA = a.country ?? '';
+          valueB = b.country ?? '';
+          break;
+
+        case 'rating':
+          valueA = a.fifA96Rating?.overallRating ?? 0;
+          valueB = b.fifA96Rating?.overallRating ?? 0;
+          break;
+
+        case 'club':
+          valueA = a.fifA96Rating?.club ?? '';
+          valueB = b.fifA96Rating?.club ?? '';
+          break;
+
+        case 'position':
+          valueA = a.fifA96Rating?.position ?? '';
+          valueB = b.fifA96Rating?.position ?? '';
+          break;
+      }
+
+      if (typeof valueA === 'string') valueA = valueA.toLowerCase();
+      if (typeof valueB === 'string') valueB = valueB.toLowerCase();
+
+      if (valueA < valueB) return this.sortDirection === 'asc' ? -1 : 1;
+      if (valueA > valueB) return this.sortDirection === 'asc' ? 1 : -1;
+      return 0;
+    });
+
+  }
+
+  // Helper for sort arrows
+  getSortIcon(column: string) {
+    if (this.sortColumn !== column) return '⇅';
+    return this.sortDirection === 'asc' ? '▲' : '▼';
+  }
 }
