@@ -10,13 +10,13 @@ import { FootballPlayerService } from '../../../services/football-player.service
 import { FootballPlayer, FootballPlayerFilter, FIFARating } from '../../../models/football-player.model';
 
 @Component({
-  selector: 'app-fifa-96',
+  selector: 'app-fifa-98',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './fifa96.html',
-  styleUrls: ['./fifa96.css'],
+  templateUrl: './fifa98.html',
+  styleUrls: ['./fifa98.css'],
 })
-export class FIFA96Component implements OnInit {
+export class FIFA98Component implements OnInit {
 
     footballPlayers: FootballPlayer[] = [];
     filteredFootballPlayers: FootballPlayer[] = [];
@@ -48,13 +48,13 @@ export class FIFA96Component implements OnInit {
     ){}
   
     ngOnInit(): void {
-      this.loadFIFA96Players();
+      this.loadFIFA98Players();
     }
   
     // ====================== Load Data ======================
-    loadFIFA96Players() {
+    loadFIFA98Players() {
       this.isLoading = true;
-      this.footballPlayerService.getFootballPlayersByGame('FIFA96')
+      this.footballPlayerService.getFootballPlayersByGame('FIFA98')
         .pipe(takeUntil(this.destroy$))
         .subscribe({
           next: (footballPlayers) => {
@@ -71,7 +71,7 @@ export class FIFA96Component implements OnInit {
     }
 
     refreshList() {
-      this.loadFIFA96Players();
+      this.loadFIFA98Players();
       this.selectedFootballPlayer = null;
       this.searchTerm = '';
     }
@@ -129,18 +129,18 @@ export class FIFA96Component implements OnInit {
             break;
 
           case 'rating':
-            valueA = a.fifA96Rating?.overallRating ?? 0;
-            valueB = b.fifA96Rating?.overallRating ?? 0;
+            valueA = a.fifA98Rating?.overallRating ?? 0;
+            valueB = b.fifA98Rating?.overallRating ?? 0;
             break;
 
           case 'club':
-            valueA = a.fifA96Rating?.club ?? '';
-            valueB = b.fifA96Rating?.club ?? '';
+            valueA = a.fifA98Rating?.club ?? '';
+            valueB = b.fifA98Rating?.club ?? '';
             break;
 
           case 'position':
-            valueA = a.fifA96Rating?.position ?? '';
-            valueB = b.fifA96Rating?.position ?? '';
+            valueA = a.fifA98Rating?.position ?? '';
+            valueB = b.fifA98Rating?.position ?? '';
             break;
         }
 
