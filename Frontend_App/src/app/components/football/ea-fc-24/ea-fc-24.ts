@@ -97,7 +97,7 @@ export class EAFC24Component implements OnInit {
     
     getClubPath(club: string | undefined): string {
       const clubName = club ?? 'default';
-      return 'assets/clubs/' + clubName.toLowerCase().replace(/ /g, '-') + '.png';
+      return 'assets/clubs/football/' + clubName.toLowerCase().replace(/ /g, '-') + '.png';
     }
 
     // ====================== SORTING ======================
