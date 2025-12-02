@@ -1,0 +1,83 @@
+<div class="ea-fc-26-container">
+
+  <!-- HEADER AND ACTION BUTTONS -->
+  <div class="ea-fc-26-header">
+    <h2>{{ 'EA FC 26 Ratings' }}</h2>
+  </div>
+
+  <!-- LOADING INDICATOR -->
+  <div class="loading-overlay" *ngIf="isLoading">
+    <div class="spinner"></div>
+    <span>{{ 'Loading' }}</span>
+  </div>
+
+  <!-- TOAST / STATUS MESSAGES -->
+  <div class="ea-fc-26-toast" *ngIf="statusMessage" [ngClass]="statusMessageType">
+    {{ statusMessage }}
+  </div>
+
+  <!-- TEMPORARY ALERTS (e.g., "No results found") -->
+  <div class="ea-fc-26-alert" *ngIf="showAlert">
+    {{ alertMessage }}
+  </div>
+
+  <!-- TABLE OF EA FC 26 PLAYERS -->
+  <div class="table-container" [class.dimmed]="isLoading">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th (click)="sortBy('playerName')" class="sortable">
+            {{ 'Player' }}  {{ getSortIcon('playerName') }}
+          </th>
+
+          <th (click)="sortBy('country')" class="sortable">
+            {{ 'Country' }}  {{ getSortIcon('country') }}
+          </th>
+
+          <th (click)="sortBy('rating')" class="sortable">
+            {{ 'EA FC 26 Rating' }}  {{ getSortIcon('rating') }}
+          </th>
+
+          <th (click)="sortBy('club')" class="sortable">
+            {{ 'EA FC 26 Club' }}  {{ getSortIcon('club') }}
+          </th>
+
+          <th (click)="sortBy('position')" class="sortable">
+            {{ 'EA FC 26 Position' }}  {{ getSortIcon('position') }}
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let fp of filteredFootballPlayers"
+          [class.selected]="selectedFootballPlayer?.playerId === fp.playerId"
+        >
+          <td>{{ fp.playerName }}</td>
+          <td>
+            <img *ngIf="fp.country" [src]="getFlagPath(fp.country)" alt="{{ fp.country }}" class="flag-icon" />
+            {{ fp.country }}
+          </td>
+          <td>{{ fp.eafC26Rating?.overallRating }}</td>
+          <td>
+            <img *ngIf="fp.eafC26Rating?.club" [src]="getClubPath(fp.eafC26Rating?.club)" alt="{{ fp.eafC26Rating?.club }}" class="club-icon" />
+            {{ fp.eafC26Rating?.club }}
+          </td>
+          <td>{{ fp.eafC26Rating?.position }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- NO RESULTS MESSAGE -->
+    <div *ngIf="!isLoading && filteredFootballPlayers.length === 0" class="no-results">
+      <p>
+        {{
+          searchTerm
+            ? ('common.noResultsFor')
+            : ('EA FC 26 has no players')
+        }}
+      </p>
+    </div>
+  </div>
+
+</div>
