@@ -1,0 +1,83 @@
+<div class="fifa2005-container">
+
+  <!-- HEADER AND ACTION BUTTONS -->
+  <div class="fifa2005-header">
+    <h2>{{ 'FIFA 2005 Ratings' }}</h2>
+  </div>
+
+  <!-- LOADING INDICATOR -->
+  <div class="loading-overlay" *ngIf="isLoading">
+    <div class="spinner"></div>
+    <span>{{ 'Loading' }}</span>
+  </div>
+
+  <!-- TOAST / STATUS MESSAGES -->
+  <div class="fifa2005-toast" *ngIf="statusMessage" [ngClass]="statusMessageType">
+    {{ statusMessage }}
+  </div>
+
+  <!-- TEMPORARY ALERTS (e.g., "No results found") -->
+  <div class="fifa2005-alert" *ngIf="showAlert">
+    {{ alertMessage }}
+  </div>
+
+  <!-- TABLE OF FIFA 2005 PLAYERS -->
+  <div class="table-container" [class.dimmed]="isLoading">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th (click)="sortBy('playerName')" class="sortable">
+            {{ 'Player' }}  {{ getSortIcon('playerName') }}
+          </th>
+
+          <th (click)="sortBy('country')" class="sortable">
+            {{ 'Country' }}  {{ getSortIcon('country') }}
+          </th>
+
+          <th (click)="sortBy('rating')" class="sortable">
+            {{ 'FIFA 2005 Rating' }}  {{ getSortIcon('rating') }}
+          </th>
+
+          <th (click)="sortBy('club')" class="sortable">
+            {{ 'FIFA 2005 Club' }}  {{ getSortIcon('club') }}
+          </th>
+
+          <th (click)="sortBy('position')" class="sortable">
+            {{ 'FIFA 2005 Position' }}  {{ getSortIcon('position') }}
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let fp of filteredFootballPlayers"
+          [class.selected]="selectedFootballPlayer?.playerId === fp.playerId"
+        >
+          <td>{{ fp.playerName }}</td>
+          <td>
+            <img *ngIf="fp.country" [src]="getFlagPath(fp.country)" alt="{{ fp.country }}" class="flag-icon" />
+            {{ fp.country }}
+          </td>
+          <td>{{ fp.fifA2005Rating?.overallRating }}</td>
+          <td>
+            <img *ngIf="fp.fifA2005Rating?.club" [src]="getClubPath(fp.fifA2005Rating?.club)" alt="{{ fp.fifA2005Rating?.club }}" class="club-icon" />
+            {{ fp.fifA2005Rating?.club }}
+          </td>
+          <td>{{ fp.fifA2005Rating?.position }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- NO RESULTS MESSAGE -->
+    <div *ngIf="!isLoading && filteredFootballPlayers.length === 0" class="no-results">
+      <p>
+        {{
+          searchTerm
+            ? ('common.noResultsFor')
+            : ('FIFA 2005 has no players')
+        }}
+      </p>
+    </div>
+  </div>
+
+</div>
