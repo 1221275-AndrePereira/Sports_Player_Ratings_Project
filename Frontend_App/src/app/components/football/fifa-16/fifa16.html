@@ -1,8 +1,8 @@
-<div class="fifa15-container">
+<div class="fifa16-container">
 
   <!-- HEADER AND ACTION BUTTONS -->
-  <div class="fifa15-header">
-    <h2>{{ 'FIFA 15 Ratings' }}</h2>
+  <div class="fifa16-header">
+    <h2>{{ 'FIFA 16 Ratings' }}</h2>
   </div>
 
   <!-- LOADING INDICATOR -->
@@ -12,16 +12,16 @@
   </div>
 
   <!-- TOAST / STATUS MESSAGES -->
-  <div class="fifa15-toast" *ngIf="statusMessage" [ngClass]="statusMessageType">
+  <div class="fifa16-toast" *ngIf="statusMessage" [ngClass]="statusMessageType">
     {{ statusMessage }}
   </div>
 
   <!-- TEMPORARY ALERTS (e.g., "No results found") -->
-  <div class="fifa15-alert" *ngIf="showAlert">
+  <div class="fifa16-alert" *ngIf="showAlert">
     {{ alertMessage }}
   </div>
 
-  <!-- TABLE OF FIFA 15 PLAYERS -->
+  <!-- TABLE OF FIFA 16 PLAYERS -->
   <div class="table-container" [class.dimmed]="isLoading">
     <table class="data-table">
       <thead>
@@ -35,15 +35,15 @@
           </th>
 
           <th (click)="sortBy('rating')" class="sortable">
-            {{ 'FIFA 15 Rating' }}  {{ getSortIcon('rating') }}
+            {{ 'FIFA 16 Rating' }}  {{ getSortIcon('rating') }}
           </th>
 
           <th (click)="sortBy('club')" class="sortable">
-            {{ 'FIFA 15 Club' }}  {{ getSortIcon('club') }}
+            {{ 'FIFA 16 Club' }}  {{ getSortIcon('club') }}
           </th>
 
           <th (click)="sortBy('position')" class="sortable">
-            {{ 'FIFA 15 Position' }}  {{ getSortIcon('position') }}
+            {{ 'FIFA 16 Position' }}  {{ getSortIcon('position') }}
           </th>
           <th></th>
         </tr>
@@ -58,12 +58,12 @@
             <img *ngIf="fp.country" [src]="getFlagPath(fp.country)" alt="{{ fp.country }}" class="flag-icon" />
             {{ fp.country }}
           </td>
-          <td>{{ fp.fifA15Rating?.overallRating }}</td>
+          <td>{{ fp.fifA16Rating?.overallRating }}</td>
           <td>
-            <img *ngIf="fp.fifA15Rating?.club" [src]="getClubPath(fp.fifA15Rating?.club)" alt="{{ fp.fifA15Rating?.club }}" class="club-icon" />
-            {{ fp.fifA15Rating?.club }}
+            <img *ngIf="fp.fifA16Rating?.club" [src]="getClubPath(fp.fifA16Rating?.club)" alt="{{ fp.fifA16Rating?.club }}" class="club-icon" />
+            {{ fp.fifA16Rating?.club }}
           </td>
-          <td>{{ fp.fifA15Rating?.position }}</td>
+          <td>{{ fp.fifA16Rating?.position }}</td>
         </tr>
       </tbody>
     </table>
@@ -74,7 +74,7 @@
         {{
           searchTerm
             ? ('common.noResultsFor')
-            : ('FIFA 15 has no players')
+            : ('FIFA 16 has no players')
         }}
       </p>
     </div>
