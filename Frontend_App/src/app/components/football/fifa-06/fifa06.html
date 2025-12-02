@@ -1,0 +1,83 @@
+<div class="fifa06-container">
+
+  <!-- HEADER AND ACTION BUTTONS -->
+  <div class="fifa06-header">
+    <h2>{{ 'FIFA 06 Ratings' }}</h2>
+  </div>
+
+  <!-- LOADING INDICATOR -->
+  <div class="loading-overlay" *ngIf="isLoading">
+    <div class="spinner"></div>
+    <span>{{ 'Loading' }}</span>
+  </div>
+
+  <!-- TOAST / STATUS MESSAGES -->
+  <div class="fifa06-toast" *ngIf="statusMessage" [ngClass]="statusMessageType">
+    {{ statusMessage }}
+  </div>
+
+  <!-- TEMPORARY ALERTS (e.g., "No results found") -->
+  <div class="fifa06-alert" *ngIf="showAlert">
+    {{ alertMessage }}
+  </div>
+
+  <!-- TABLE OF FIFA 06 PLAYERS -->
+  <div class="table-container" [class.dimmed]="isLoading">
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th (click)="sortBy('playerName')" class="sortable">
+            {{ 'Player' }}  {{ getSortIcon('playerName') }}
+          </th>
+
+          <th (click)="sortBy('country')" class="sortable">
+            {{ 'Country' }}  {{ getSortIcon('country') }}
+          </th>
+
+          <th (click)="sortBy('rating')" class="sortable">
+            {{ 'FIFA 06 Rating' }}  {{ getSortIcon('rating') }}
+          </th>
+
+          <th (click)="sortBy('club')" class="sortable">
+            {{ 'FIFA 06 Club' }}  {{ getSortIcon('club') }}
+          </th>
+
+          <th (click)="sortBy('position')" class="sortable">
+            {{ 'FIFA 06 Position' }}  {{ getSortIcon('position') }}
+          </th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          *ngFor="let fp of filteredFootballPlayers"
+          [class.selected]="selectedFootballPlayer?.playerId === fp.playerId"
+        >
+          <td>{{ fp.playerName }}</td>
+          <td>
+            <img *ngIf="fp.country" [src]="getFlagPath(fp.country)" alt="{{ fp.country }}" class="flag-icon" />
+            {{ fp.country }}
+          </td>
+          <td>{{ fp.fifA06Rating?.overallRating }}</td>
+          <td>
+            <img *ngIf="fp.fifA06Rating?.club" [src]="getClubPath(fp.fifA06Rating?.club)" alt="{{ fp.fifA06Rating?.club }}" class="club-icon" />
+            {{ fp.fifA06Rating?.club }}
+          </td>
+          <td>{{ fp.fifA06Rating?.position }}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- NO RESULTS MESSAGE -->
+    <div *ngIf="!isLoading && filteredFootballPlayers.length === 0" class="no-results">
+      <p>
+        {{
+          searchTerm
+            ? ('common.noResultsFor')
+            : ('FIFA 06 has no players')
+        }}
+      </p>
+    </div>
+  </div>
+
+</div>
