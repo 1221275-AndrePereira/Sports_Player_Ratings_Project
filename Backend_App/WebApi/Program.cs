@@ -2,7 +2,12 @@ using Microsoft.EntityFrameworkCore;
 using Application.Services;
 using DataModel.Repository;
 using DataModel.Mapper;
+using Domain.Factory.AmericanFootballPlayerFactory;
+using Domain.Factory.BaseballPlayerFactory;
+using Domain.Factory.BasketballPlayerFactory;
 using Domain.Factory.FootballPlayerFactory;
+using Domain.Factory.HandballPlayerFactory;
+using Domain.Factory.IceHockeyPlayerFactory;
 using Domain.Factory.Interface;
 using Domain.IRepository;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -45,10 +50,35 @@ if (builder.Environment.EnvironmentName != "Test")
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddTransient<IAmericanFootballPlayerRepository, AmericanFootballPlayerRepository>();
+builder.Services.AddTransient<IAmericanFootballPlayerFactory, AmericanFootballPlayerFactory>();
+builder.Services.AddTransient<AmericanFootballPlayerMapper>();
+builder.Services.AddTransient<AmericanFootballPlayerService>();
+
+builder.Services.AddTransient<IBaseballPlayerRepository, BaseballPlayerRepository>();
+builder.Services.AddTransient<IBaseballPlayerFactory, BaseballPlayerFactory>();
+builder.Services.AddTransient<BaseballPlayerMapper>();
+builder.Services.AddTransient<BaseballPlayerService>();
+
+builder.Services.AddTransient<IBasketballPlayerRepository, BasketballPlayerRepository>();
+builder.Services.AddTransient<IBasketballPlayerFactory, BasketballPlayerFactory>();
+builder.Services.AddTransient<BasketballPlayerMapper>();
+builder.Services.AddTransient<BasketballPlayerService>();
+
 builder.Services.AddTransient<IFootballPlayerRepository, FootballPlayerRepository>();
 builder.Services.AddTransient<IFootballPlayerFactory, FootballPlayerFactory>();
 builder.Services.AddTransient<FootballPlayerMapper>();
 builder.Services.AddTransient<FootballPlayerService>();
+
+builder.Services.AddTransient<IHandballPlayerRepository, HandballPlayerRepository>();
+builder.Services.AddTransient<IHandballPlayerFactory, HandballPlayerFactory>();
+builder.Services.AddTransient<HandballPlayerMapper>();
+builder.Services.AddTransient<HandballPlayerService>();
+
+builder.Services.AddTransient<IIceHockeyPlayerRepository, IceHockeyPlayerRepository>();
+builder.Services.AddTransient<IIceHockeyPlayerFactory, IceHockeyPlayerFactory>();
+builder.Services.AddTransient<IceHockeyPlayerMapper>();
+builder.Services.AddTransient<IceHockeyPlayerService>();
 
 // Adicione o serviço de CORS
 builder.Services.AddCors(options =>
