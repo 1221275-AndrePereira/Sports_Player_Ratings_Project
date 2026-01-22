@@ -20,29 +20,6 @@
           <a class="navbar__link dropdown-toggle" (click)="toggleDropdown('football', $event)">
             {{ 'Football'}} <span class="caret">▾</span>
           </a>
-        
-          <div class="dropdown" *ngIf="dropdownOpenFootball">
-          
-            <!-- LOOP DECADES -->
-            <div *ngFor="let decade of fifaDecades">
-              <a (click)="toggleFIFADecade(decade.value); $event.stopPropagation(); $event.preventDefault();">
-                {{ decade.label }} <span class="caret">></span>
-              </a>
-            
-              <!-- LOOP FIFA GAMES INSIDE DECADE -->
-              <div class="dropdown sub-dropdown" *ngIf="openDecade === decade.value">
-                <a
-                  class="dropdown__item"
-                  *ngFor="let game of decade.games"
-                  [routerLink]="['/fifa', game.route]"
-                  (click)="closeDropdown(); $event.stopPropagation();"
-                >
-                  {{ game.name }}
-                </a>
-              </div>
-            </div>
-          
-          </div>
         </div>
 
 

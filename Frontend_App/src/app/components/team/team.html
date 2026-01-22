@@ -1,8 +1,8 @@
-<div class="ea-fc-24-container">
+<div class="team-container">
 
   <!-- HEADER AND ACTION BUTTONS -->
-  <div class="ea-fc-24-header">
-    <h2>{{ 'EA FC 24 Ratings' }}</h2>
+  <div class="team-header">
+    <h2>{{ 'All Created Teams' }}</h2>
   </div>
 
   <!-- LOADING INDICATOR -->
@@ -12,38 +12,38 @@
   </div>
 
   <!-- TOAST / STATUS MESSAGES -->
-  <div class="ea-fc-24-toast" *ngIf="statusMessage" [ngClass]="statusMessageType">
+  <div class="team-toast" *ngIf="statusMessage" [ngClass]="statusMessageType">
     {{ statusMessage }}
   </div>
 
   <!-- TEMPORARY ALERTS (e.g., "No results found") -->
-  <div class="ea-fc-24-alert" *ngIf="showAlert">
+  <div class="team-alert" *ngIf="showAlert">
     {{ alertMessage }}
   </div>
 
-  <!-- TABLE OF EA FC 24 PLAYERS -->
+  <!-- TABLE OF FIFA 23 PLAYERS -->
   <div class="table-container" [class.dimmed]="isLoading">
     <table class="data-table">
       <thead>
         <tr>
           <th (click)="sortBy('playerName')" class="sortable">
-            {{ 'Player' }}  {{ getSortIcon('playerName') }}
+            {{ 'Player' }}
           </th>
 
           <th (click)="sortBy('country')" class="sortable">
-            {{ 'Country' }}  {{ getSortIcon('country') }}
+            {{ 'Country' }}
           </th>
 
           <th (click)="sortBy('rating')" class="sortable">
-            {{ 'EA FC 24 Rating' }}  {{ getSortIcon('rating') }}
+            {{ 'FIFA 23 Rating' }}
           </th>
 
           <th (click)="sortBy('club')" class="sortable">
-            {{ 'EA FC 24 Club' }}  {{ getSortIcon('club') }}
+            {{ 'FIFA 23 Club' }}
           </th>
 
           <th (click)="sortBy('position')" class="sortable">
-            {{ 'EA FC 24 Position' }}  {{ getSortIcon('position') }}
+            {{ 'FIFA 23 Position' }}
           </th>
           <th></th>
         </tr>
@@ -58,23 +58,23 @@
             <img *ngIf="fp.country" [src]="getFlagPath(fp.country)" alt="{{ fp.country }}" class="flag-icon" />
             {{ fp.country }}
           </td>
-          <td>{{ fp.eafC24Rating?.overallRating }}</td>
+          <td>{{ fp.fifA23Rating?.overallRating }}</td>
           <td>
-            <img *ngIf="fp.eafC24Rating?.club" [src]="getClubPath(fp.eafC24Rating?.club)" alt="{{ fp.eafC24Rating?.club }}" class="club-icon" />
-            {{ fp.eafC24Rating?.club }}
+            <img *ngIf="fp.fifA23Rating?.club" [src]="getClubPath(fp.fifA23Rating?.club)" alt="{{ fp.fifA23Rating?.club }}" class="club-icon" />
+            {{ fp.fifA23Rating?.club }}
           </td>
-          <td>{{ fp.eafC24Rating?.position }}</td>
+          <td>{{ fp.fifA23Rating?.position }}</td>
         </tr>
       </tbody>
     </table>
 
     <!-- NO RESULTS MESSAGE -->
-    <div *ngIf="!isLoading && filteredFootballPlayers.length === 0" class="no-results">
+    <div *ngIf="!isLoading && filteredTeams.length === 0" class="no-results">
       <p>
         {{
           searchTerm
             ? ('common.noResultsFor')
-            : ('EA FC 24 has no players')
+            : ('No teams found')
         }}
       </p>
     </div>

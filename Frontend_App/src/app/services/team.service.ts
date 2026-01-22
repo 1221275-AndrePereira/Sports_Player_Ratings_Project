@@ -3,34 +3,27 @@ import { HttpClient, HttpErrorResponse, HttpParams } from '@angular/common/http'
 import { catchError } from 'rxjs/internal/operators/catchError';
 import { Observable } from 'rxjs/internal/Observable';
 import { throwError } from 'rxjs/internal/observable/throwError';
-import { FootballPlayer, FootballPlayerFilter } from '../models/football-player.model';
+import { Team, TeamFilter } from '../models/team.model';
 
 @Injectable({
   providedIn: 'root'
 })
 
 export class FootballPlayerService {
-    private apiUrl = 'https://localhost:7096/api/football';
+    private apiUrl = 'https://localhost:7096/api/teams';
 
     constructor(private http: HttpClient) { }
 
     //============================================================================
 
-    getAllFootballPlayers(): Observable<FootballPlayer[]> {
-    return this.http.get<FootballPlayer[]>(`${this.apiUrl}`)
+    getAllTeams(): Observable<Team[]> {
+    return this.http.get<Team[]>(`${this.apiUrl}`)
       .pipe(
         catchError(this.handleError)
       );
     }
 
-    getFootballPlayersByGame(game: string): Observable<FootballPlayer[]> {
-    return this.http.get<FootballPlayer[]>(`${this.apiUrl}/game/${game}`)
-      .pipe(
-        catchError(this.handleError)
-      )
-    }
-
-    getFootballPlayersByFilter(filter: FootballPlayerFilter): Observable<FootballPlayerFilter[]> {
+    getTeamsByFilter(filter: TeamFilter): Observable<TeamFilter[]> {
       let params = new HttpParams();
       
       if (filter) {
@@ -51,7 +44,7 @@ export class FootballPlayerService {
       }
 
       const url = `${this.apiUrl}/search`;
-      return this.http.get<FootballPlayer[]>(url, { params })
+      return this.http.get<Team[]>(url, { params })
         .pipe(
           catchError(this.handleError)
         );
@@ -79,10 +72,10 @@ export class FootballPlayerService {
             errorMessage = 'Forbidden - insufficient permissions';
             break;
           case 404:
-            errorMessage = 'Football player not found';
+            errorMessage = 'Team not found';
             break;
           case 409:
-            errorMessage = 'Conflict - football player with this name may already exist';
+            errorMessage = 'Conflict - team with this name may already exist';
             break;
           case 500:
             errorMessage = 'Internal server error - please try again later';
@@ -92,7 +85,7 @@ export class FootballPlayerService {
         }
       }
 
-      console.error('FootballPlayerService Error:', error);
+      console.error('TeamService Error:', error);
       return throwError(() => new Error(errorMessage));
     }
 

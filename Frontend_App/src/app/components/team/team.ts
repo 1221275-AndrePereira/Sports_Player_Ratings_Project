@@ -6,17 +6,17 @@ import { FormsModule } from '@angular/forms';
 
 import { Subject } from 'rxjs/internal/Subject';
 import { takeUntil } from 'rxjs/operators';
-import { FootballPlayerService } from '../../../services/football-player.service';
+import { FootballPlayerService } from '../../services/team.service';
 import { FootballPlayer, FootballPlayerFilter, FIFARating } from '../../../models/football-player.model';
 
 @Component({
-  selector: 'app-fifa-23',
+  selector: 'app-team',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './fifa23.html',
-  styleUrls: ['./fifa23.css'],
+  templateUrl: './team.html',
+  styleUrls: ['./team.css'],
 })
-export class FIFA23Component implements OnInit {
+export class TeamComponent implements OnInit {
 
     footballPlayers: FootballPlayer[] = [];
     filteredFootballPlayers: FootballPlayer[] = [];
@@ -48,18 +48,18 @@ export class FIFA23Component implements OnInit {
     ){}
   
     ngOnInit(): void {
-      this.loadFIFA23Players();
+      this.loadTeams();
     }
   
     // ====================== Load Data ======================
-    loadFIFA23Players() {
+    loadTeams() {
       this.isLoading = true;
       this.footballPlayerService.getFootballPlayersByGame('FIFA23')
         .pipe(takeUntil(this.destroy$))
         .subscribe({
-          next: (footballPlayers) => {
-            this.footballPlayers = footballPlayers;
-            this.filteredFootballPlayers = [...footballPlayers];
+          next: (teams) => {
+            this.footballPlayers = teams;
+            this.filteredFootballPlayers = [...teams];
             this.isLoading = false;
           },
           error: (error) => {
@@ -95,68 +95,8 @@ export class FIFA23Component implements OnInit {
       return 'assets/flags/' + country.trim().toLowerCase().replace(/ /g, '-') + '.png';
     }
     
-    getClubPath(club: string | undefined): string {
-      const clubName = club ?? 'default';
-      return 'assets/clubs/football' + clubName.toLowerCase().replace(/ /g, '-') + '.png';
-    }
-
-    // ====================== SORTING ======================
-    sortBy(column: 'playerName' | 'country' | 'rating' | 'club' | 'position') {
-
-
-      if (this.sortColumn === column) {
-        this.sortDirection = this.sortDirection === 'asc' ? 'desc' : 'asc';
-      } else {
-
-        this.sortColumn = column;
-        this.sortDirection = 'asc';
-      }
-
-      this.filteredFootballPlayers.sort((a, b) => {
-
-        let valueA: any;
-        let valueB: any;
-
-        switch (column) {
-          case 'playerName':
-            valueA = a.playerName ?? '';
-            valueB = b.playerName ?? '';
-            break;
-
-          case 'country':
-            valueA = a.country ?? '';
-            valueB = b.country ?? '';
-            break;
-
-          case 'rating':
-            valueA = a.fifA23Rating?.overallRating ?? 0;
-            valueB = b.fifA23Rating?.overallRating ?? 0;
-            break;
-
-          case 'club':
-            valueA = a.fifA23Rating?.club ?? '';
-            valueB = b.fifA23Rating?.club ?? '';
-            break;
-
-          case 'position':
-            valueA = a.fifA23Rating?.position ?? '';
-            valueB = b.fifA23Rating?.position ?? '';
-            break;
-        }
-
-        if (typeof valueA === 'string') valueA = valueA.toLowerCase();
-        if (typeof valueB === 'string') valueB = valueB.toLowerCase();
-
-        if (valueA < valueB) return this.sortDirection === 'asc' ? -1 : 1;
-        if (valueA > valueB) return this.sortDirection === 'asc' ? 1 : -1;
-        return 0;
-      });
-
-    }
-
-    // Helper for sort arrows
-    getSortIcon(column: string) {
-      if (this.sortColumn !== column) return '⇅';
-      return this.sortDirection === 'asc' ? '▲' : '▼';
+    getTeamPath(team: string | undefined): string {
+      const teamName = team ?? 'default';
+      return 'assets/teams/' + teamName.toLowerCase().replace(/ /g, '-') + '.png';
     }
 }
