@@ -77,8 +77,6 @@ Player ratings for every season(videogame) I could possibly find.
 ### Basketball
 
 - Past NBA seasons will be added using BasketballGM
-- NBA Live 95(1994-95 season)
-- NBA Live 96(1995-96 season)
 - NBA Live 97(1996-97 season)
 - NBA Live 98(1997-98 season)
 - NBA Live 99(1998-99 season)
