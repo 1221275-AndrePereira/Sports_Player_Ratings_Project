@@ -42,6 +42,19 @@ Player ratings for every season(videogame) I could possibly find.
 - Madden NFL 25(2024 season)
 - Madden NFL 26(2025 season)
 
+- NCAA Football 2005(2004 season)
+- NCAA Football 06(2005 season)
+- NCAA Football 07(2006 season)
+- NCAA Football 08(2007 season)
+- NCAA Football 09(2008 season)
+- NCAA Football 10(2009 season)
+- NCAA Football 11(2010 season)
+- NCAA Football 12(2011 season)
+- NCAA Football 13(2012 season)
+- NCAA Football 14(2013 season)
+- EA Sports College Football 25(2024 season)
+- EA Sports College Football 26(2025 season)
+
 ### Baseball
 
 - Past MLB seasons will be added using Out of the Park Baseball
@@ -73,6 +86,9 @@ Player ratings for every season(videogame) I could possibly find.
 - MLB The Show 23(2023 season)
 - MLB The Show 24(2024 season)
 - MLB The Show 25(2025 season)
+
+- MVP 06: NCAA Baseball(2005 season)
+- MVP 07: NCAA Baseball(2007 season)
 
 ### Basketball
 
@@ -107,6 +123,15 @@ Player ratings for every season(videogame) I could possibly find.
 - NBA 2K24(2023-24 season)
 - NBA 2K25(2024-25 season)
 - NBA 2K26(2025-26 season)
+
+- NCAA College Basketball 2K3(2002-03 season)
+- ESPN College Hoops(2003-04 season)
+- ESPN College Hoops 2K5(2004-05 season)
+- College Hoops 2K6(2005-06 season)
+- College Hoops 2K7(2006-07 season)
+- College Hoops 2K8(2007-08 season)
+- NCAA Basketball 09(2008-09 season)
+- NCAA Basketball 10(2009-10 season)
 
 ### Football
 
