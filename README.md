@@ -144,6 +144,8 @@ Player ratings for every season(videogame) I could possibly find.
 - NCAA Basketball 09(2008-09 season)
 - NCAA Basketball 10(2009-10 season)
 
+Note: NBA 2K14-2K17 also includes some EuroLeague teams
+
 ### Football
 
 - FIFA 96(1994-95 season)
@@ -220,6 +222,8 @@ Player ratings for every season(videogame) I could possibly find.
 - NHL 24(2023-24 season)
 - NHL 25(2024-25 season)
 - NHL 26(2025-26 season)
+
+Note: Since NHL 2004 some other leagues are present in NHL videogames
 
 
 ## What to do next
