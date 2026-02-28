@@ -63,6 +63,11 @@ Player ratings for every season(videogame) I could possibly find.
 - EA Sports College Football 25(2024 season)
 - EA Sports College Football 26(2025 season)
 
+### Australian Rules Football
+
+- AFL Evolution 2(2020 season)
+- AFL Evolution 2(2021 season)
+
 ### Baseball
 
 - Past MLB seasons will be added using Out of the Park Baseball
@@ -145,6 +150,12 @@ Player ratings for every season(videogame) I could possibly find.
 - NCAA Basketball 10(2009-10 season)
 
 Note: NBA 2K14-2K17 also includes some EuroLeague teams
+
+### Cricket
+
+- Cricket 19
+- Cricket 22
+- Cricket 24
 
 ### Football
 
