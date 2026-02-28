@@ -240,6 +240,8 @@ Note: Since NHL 2004 some other leagues are present in NHL videogames
 
 ### Rugby
 
+- Rugby 18(2017-18 season)
+- Rugby 20(2019-20 season)
 - Rugby 22(2021-22 season)
 - Rugby 25(2024-25 season)
 
