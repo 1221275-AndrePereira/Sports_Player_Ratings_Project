@@ -182,6 +182,8 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 
 ### Handball
 
+- IHF Handball Challenge 12(2011-12 season)
+- IHF Handball Challenge 14(2013-14 season)
 - Handball 17(2016-17 season)
 - Handball 21(2020-21 season)
 
@@ -225,10 +227,15 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 
 Note: Since NHL 2004 some other leagues are present in NHL videogames
 
+### Rugby
+
+- Rugby 22(2021-22 season)
+- Rugby 25(2024-25 season)
+
 
 ## What to do next
 
-Include ratings for all players in each game.
+Include ratings for all players in each game. Finish both the backend and frontend. Find more games and even more sports like Cricket, Rugby or Australian Rules Football
 
 ## How to run
 
