@@ -241,6 +241,7 @@ Note: Since NHL 2004 some other leagues are present in NHL videogames
 
 ### Rugby
 
+- Rugby 15(2014-15 season)
 - Rugby 18(2017-18 season)
 - Rugby 20(2019-20 season)
 - Rugby 22(2021-22 season)
@@ -249,7 +250,7 @@ Note: Since NHL 2004 some other leagues are present in NHL videogames
 
 ## What to do next
 
-Include ratings for all players in each game. Finish both the backend and frontend. Find more games and even more sports like Cricket, Rugby or Australian Rules Football
+Include ratings for all players in each game. Finish both the backend and frontend. Find more games and even more sports like Rugby League or Cycling for example
 
 ## How to run
 
