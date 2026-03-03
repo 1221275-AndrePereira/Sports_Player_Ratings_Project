@@ -43,6 +43,7 @@ Player ratings for every season(videogame) I could possibly find.
 - Madden NFL 25(2024 season)
 - Madden NFL 26(2025 season)
 
+- NCAA Football Gamebreaker(1996 season)
 - NCAA Gamebreaker 98(1997 season)
 - NCAA Gamebreaker 99(1998 season)
 - NCAA Gamebreaker 2000(1999 season)
