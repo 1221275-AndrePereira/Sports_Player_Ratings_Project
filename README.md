@@ -68,6 +68,7 @@ Player ratings for every season(videogame) I could possibly find.
 
 - AFL Evolution 2(2020 season)
 - AFL Evolution 2(2021 season)
+- AFL 26(2025 season)
 
 ### Baseball
 
@@ -100,6 +101,7 @@ Player ratings for every season(videogame) I could possibly find.
 - MLB The Show 23(2023 season)
 - MLB The Show 24(2024 season)
 - MLB The Show 25(2025 season)
+- MLB The Show 26(2026 season)
 
 - MVP 06: NCAA Baseball(2005 season)
 - MVP 07: NCAA Baseball(2007 season)
@@ -157,6 +159,7 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 - Cricket 19
 - Cricket 22
 - Cricket 24
+- Cricket 26
 
 ### Football
 
@@ -247,6 +250,10 @@ Note: Since NHL 2004 some other leagues are present in NHL videogames
 - Rugby 20(2019-20 season)
 - Rugby 22(2021-22 season)
 - Rugby 25(2024-25 season)
+
+### Rugby League
+
+- Rugby League 26(2026 season)
 
 
 ## What to do next
