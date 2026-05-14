@@ -47,7 +47,7 @@ Player ratings for every season(videogame) I could possibly find.
 - NCAA Gamebreaker 98(1997 season)
 - NCAA Gamebreaker 99(1998 season)
 - NCAA Gamebreaker 2000(1999 season)
-- NCAA Gamebreaker 2001(2001 season)
+- NCAA Gamebreaker 2001(2000 season)
 - NCAA Football 2002(2001 season)
 - NCAA Football 2003(2002 season)
 - NCAA Football 2004(2003 season)
