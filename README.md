@@ -11,8 +11,9 @@ Player ratings for every season(videogame) I could possibly find.
 
 ### American Football
 
-- Past NFL seasons will be added using Pro Strategy Football and each season's mods starting with the 1940 NFL season and including 1995 season
+- Past NFL seasons will be added using Pro Strategy Football and each season's mods starting with the 1940 NFL season
 - NFL 95 (1994 season)
+- Prime Time NFL (1995 season)
 - NFL Gameday 97(1996 season)
 - NFL Gameday 98(1997 season)
 - NFL Gameday 99(1998 season)
