@@ -44,6 +44,7 @@ Player ratings for every season(videogame) I could possibly find.
 - Madden NFL 24(2023 season)
 - Madden NFL 25(2024 season)
 - Madden NFL 26(2025 season)
+- Madden NFL 27(2026 season)
 
 - NCAA Football Gamebreaker(1996 season)
 - NCAA Gamebreaker 98(1997 season)
@@ -65,6 +66,7 @@ Player ratings for every season(videogame) I could possibly find.
 - NCAA Football 14(2013 season)
 - EA Sports College Football 25(2024 season)
 - EA Sports College Football 26(2025 season)
+- EA Sports College Football 27(2026 season)
 
 ### Australian Rules Football
 
@@ -141,6 +143,7 @@ Player ratings for every season(videogame) I could possibly find.
 - NBA 2K24(2023-24 season)
 - NBA 2K25(2024-25 season)
 - NBA 2K26(2025-26 season)
+- NBA 2K27(2026-27 season)
 
 - NCAA Final Four 2000(1999-00 season)
 - NCAA Final Four 2001(2000-01 season)
@@ -165,8 +168,8 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 
 ### Football
 
-- FIFA 96(1994-95 season)
-- FIFA 97(1995-96 season)
+- FIFA 96(1995-96 season)
+- FIFA 97(1996-97 season)
 - FIFA 98(1997-98 season)
 - FIFA 99(1998-99 season)
 - FIFA 2000(1999-00 season)
@@ -196,6 +199,7 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 - EA Sports FC 24(2023-24 season)
 - EA Sports FC 25(2024-25 season)
 - EA Sports FC 26(2025-26 season)
+- EA Sports FC 27(2026-27 season)
 
 ### Handball
 
@@ -242,6 +246,7 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 - NHL 24(2023-24 season)
 - NHL 25(2024-25 season)
 - NHL 26(2025-26 season)
+- NHL 27(2026-27 season)
 
 Note: Since NHL 2004 some other leagues are present in NHL videogames
 
