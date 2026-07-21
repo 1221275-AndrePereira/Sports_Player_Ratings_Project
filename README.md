@@ -163,14 +163,14 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 
 - Cricket 19
 - Cricket 22
-- Cricket 24
+- Cricket 24(With Academy)
 - Cricket 26
 
 ### Cycling
 
-- Pro Cycling Manager 05
-- Pro Cycling Manager 22 (World DB)
-- Pro Cycling Manager 24 (World DB)
+- Pro Cycling Manager 05(2005 season)
+- Pro Cycling Manager 22(World DB)(2022 season)
+- Pro Cycling Manager 24(World DB)(2024 season)
 
 ### Football
 
@@ -209,7 +209,6 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 
 ### Handball
 
-- IHF Handball Challenge 12(2011-12 season)
 - IHF Handball Challenge 14(2013-14 season)
 - Handball 16(2015-16 season)
 - Handball 17(2016-17 season)
@@ -258,6 +257,9 @@ Note: Since NHL 2004 some other leagues are present in NHL videogames
 
 ### Rugby
 
+- Rugby 2005(2004-05 season)
+- Rugby 06(2005-06 season)
+- Rugby 08(2007-08 season)
 - Rugby 15(2014-15 season)
 - Rugby 18(2017-18 season)
 - Rugby 20(2019-20 season)
