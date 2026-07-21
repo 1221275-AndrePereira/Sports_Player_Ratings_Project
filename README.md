@@ -70,8 +70,23 @@ Player ratings for every season(videogame) I could possibly find.
 
 ### Australian Rules Football
 
+- Aussie Rules Footy(1991 season)
+- AFL Finals Fever(1996 season)
+- AFL 98(1997 season)
+- AFL 99(1998 season)
+- AFL Live 2003(2002 season)
+- AFL Live 2004(2003 season)
+- AFL Premiership(2004 season)
+- AFL Premiership 2005(2005 season)
+- AFL Premiership 2006(2006 season)
+- AFL Premiership 2007(2007 season)
+- AFL Live(2011 season)
+- AFL Live GOTY Edition(2012 season)
+- AFL Evolution(2017 season)
+- AFL Evolution(2018 season)
 - AFL Evolution 2(2020 season)
 - AFL Evolution 2(2021 season)
+- AFL 23(2023 season)
 - AFL 26(2025 season)
 
 ### Baseball
