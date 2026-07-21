@@ -283,6 +283,12 @@ Note: Since NHL 2004 some other leagues are present in NHL videogames
 
 ### Rugby League
 
+- Rugby League(2004 season)(?)
+- Rugby League 2(2006 season)(?)
+- Rugby League Live(2010 season)
+- Rugby League Live 2(2012 season)
+- Rugby League Live 3(2015 season)
+- Rugby League Live 4(2017 season)
 - Rugby League 26(2026 season)
 
 
