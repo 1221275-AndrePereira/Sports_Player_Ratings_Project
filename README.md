@@ -166,6 +166,12 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 - Cricket 24
 - Cricket 26
 
+### Cycling
+
+- Pro Cycling Manager 05
+- Pro Cycling Manager 22 (World DB)
+- Pro Cycling Manager 24 (World DB)
+
 ### Football
 
 - FIFA 96(1995-96 season)
