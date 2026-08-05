@@ -190,7 +190,7 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 ### Football
 
 - FIFA 96(1994-95 season) - Dennis Bergkamp still in Inter Milan
-- FIFA 97(1996-97 season)
+- FIFA 97(1995-96 season) - Alan Shearer still in Blackburn Rovers
 - FIFA 98(1997-98 season)
 - FIFA 99(1998-99 season)
 - FIFA 2000(1999-00 season)
