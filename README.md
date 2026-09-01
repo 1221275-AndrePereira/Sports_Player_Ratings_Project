@@ -172,6 +172,8 @@ Player ratings for every season(videogame) I could possibly find.
 - NCAA Basketball 09(2008-09 season)
 - NCAA Basketball 10(2009-10 season)
 
+- PCF 2020 with 2024 mod(2024-25 season)
+
 Note: NBA 2K14-2K17 also includes some EuroLeague teams
 
 ### Cricket
