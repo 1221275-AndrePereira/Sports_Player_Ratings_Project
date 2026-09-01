@@ -172,7 +172,12 @@ Player ratings for every season(videogame) I could possibly find.
 - NCAA Basketball 09(2008-09 season)
 - NCAA Basketball 10(2009-10 season)
 
-- PCF 2020 with 2024 mod(2024-25 season)
+- Pro Basket Manager 08 (2007-08 season)
+- International Basketball Manager 2010/2011 (2010-11 season)
+- International Basketball Manager 22 (2021-22 season)
+- International Basketball Manager 23 (2022-23 season)
+- Pro Basketball Manager 2024 with real names mod(2023-24 season) - Includes women's basketball
+- International Basketball Manager 26 (2025-26 season)
 
 Note: NBA 2K14-2K17 also includes some EuroLeague teams
 
@@ -226,6 +231,10 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 
 ### Handball
 
+- Handball Manager 2007 (2006-07 season) - Includes women's Handball
+- Handball Manager 2008 (2007-08 season) - Includes women's Handball
+- Handball Manager 2009 (2008-09 season) - Includes women's Handball
+- Handball Manager 2010 (2009-10 season) - Includes women's Handball
 - IHF Handball Challenge 12(2011-12 season)
 - IHF Handball Challenge 14(2013-14 season)
 - Handball 16(2015-16 season)
