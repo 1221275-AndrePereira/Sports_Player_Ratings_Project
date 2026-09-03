@@ -293,7 +293,6 @@ Note: Women's Ice Hockey since NHL 25
 
 ### Rugby
 
-- Rugby 2005(2004-05 season)
 - Rugby 06(2005-06 season)
 - Rugby 08(2007-08 season)
 - Rugby 15(2014-15 season)
@@ -321,6 +320,7 @@ Note: Women's Ice Hockey since NHL 25
 - Volleyball Manager 2012 (2012-13 season)
 - Volleyball Manager 2013 (2013-14 season)
 - Volleyball Manager 2014 (2014-15 season)
+- Setter: Volleyball Manager 27 (2026-27 season)
 
 
 ## What to do next
