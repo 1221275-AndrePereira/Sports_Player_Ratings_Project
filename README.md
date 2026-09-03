@@ -180,6 +180,7 @@ Player ratings for every season(videogame) I could possibly find.
 - International Basketball Manager 26 (2025-26 season)
 
 Note: NBA 2K14-2K17 also includes some EuroLeague teams
+Note: Women's Basketball in NBA 2K since NBA 2K20
 
 ### Cricket
 
@@ -190,9 +191,12 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 
 ### Cycling
 
-- Pro Cycling Manager 05(2005 season)
-- Pro Cycling Manager 22(World DB)(2022 season)
-- Pro Cycling Manager 24(World DB)(2024 season)
+- Cycling Manager 3 (2003 season)
+- Cycling Manager 4 (2004 season)
+- Pro Cycling Manager (2005 season)
+- Pro Cycling Manager 2006 (2006 season)
+- Pro Cycling Manager 22 (World DB)(2022 season)
+- Pro Cycling Manager 24 (World DB)(2024 season)
 
 ### Football
 
@@ -229,6 +233,8 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 - EA Sports FC 26(2025-26 season)
 - EA Sports FC 27(2026-27 season)
 
+Note: Women's Football since FIFA 23
+
 ### Handball
 
 - Handball Manager 2007 (2006-07 season) - Includes women's Handball
@@ -241,6 +247,7 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 - Handball 17(2016-17 season)
 - Handball 21(2020-21 season)
 - Handball Manager 2022(2021-22 season)
+- Handball Manager (2025-26 season) - Only women's handball
 
 ### Ice Hockey
 
@@ -282,6 +289,7 @@ Note: NBA 2K14-2K17 also includes some EuroLeague teams
 - NHL 27(2026-27 season)
 
 Note: Since NHL 2004 some other leagues are present in NHL videogames
+Note: Women's Ice Hockey since NHL 25
 
 ### Rugby
 
