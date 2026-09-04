@@ -70,7 +70,6 @@ Player ratings for every season(videogame) I could possibly find.
 
 ### Australian Rules Football
 
-- AFL Finals Fever(1996 season)
 - AFL 98(1997 season)
 - AFL 99(1998 season)
 - AFL Live 2003(2002 season)
