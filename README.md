@@ -80,6 +80,7 @@ Player ratings for every season(videogame) I could possibly find.
 - AFL Premiership 2005(2005 season)
 - AFL Premiership 2006(2006 season)
 - AFL Premiership 2007(2007 season)
+- AFL Challenge (2009 season)
 - AFL Live(2011 season)
 - AFL Live GOTY Edition(2012 season)
 - AFL Evolution(2017 season)
