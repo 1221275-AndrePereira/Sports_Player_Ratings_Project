@@ -80,8 +80,6 @@ Player ratings for every season(videogame) I could possibly find.
 - AFL Premiership 2007(2007 season)
 - AFL Challenge (2009 season)
 - AFL Live(2011 season)
-- AFL Evolution(2017 season)
-- AFL Evolution(2018 season)
 - AFL Evolution 2(2020 season)
 - AFL Evolution 2(2021 season)
 - AFL 23(2023 season)
