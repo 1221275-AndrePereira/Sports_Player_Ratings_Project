@@ -70,8 +70,6 @@ Player ratings for every season(videogame) I could possibly find.
 
 ### Australian Rules Football
 
-- AFL 98(1997 season)
-- AFL 99(1998 season)
 - AFL Live 2003(2002 season)
 - AFL Live 2004(2003 season)
 - AFL Premiership(2004 season)
