@@ -70,7 +70,6 @@ Player ratings for every season(videogame) I could possibly find.
 
 ### Australian Rules Football
 
-- Aussie Rules Footy(1991 season)
 - AFL Finals Fever(1996 season)
 - AFL 98(1997 season)
 - AFL 99(1998 season)
@@ -82,7 +81,6 @@ Player ratings for every season(videogame) I could possibly find.
 - AFL Premiership 2007(2007 season)
 - AFL Challenge (2009 season)
 - AFL Live(2011 season)
-- AFL Live GOTY Edition(2012 season)
 - AFL Evolution(2017 season)
 - AFL Evolution(2018 season)
 - AFL Evolution 2(2020 season)
@@ -309,7 +307,6 @@ Note: Women's Ice Hockey since NHL 25
 - Rugby League Live(2010 season)
 - Rugby League Live 2(2012 season)
 - Rugby League Live 3(2015 season)
-- Rugby League Live 4(2017 season)
 - Rugby League 26(2026 season)
 
 
