@@ -300,8 +300,8 @@ Note: Women's Ice Hockey since NHL 25
 
 ### Rugby League
 
-- Rugby League(2004 season)(?)
-- Rugby League 2(2006 season)(?)
+- Rugby League(2003 season)
+- Rugby League 2(2005 season)
 - Rugby League Live(2010 season)
 - Rugby League Live 2(2012 season)
 - Rugby League Live 3(2015 season)
