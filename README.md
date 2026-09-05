@@ -300,12 +300,12 @@ Note: Women's Ice Hockey since NHL 25
 
 ### Rugby League
 
-- Rugby League(2003 season)
-- Rugby League 2(2005 season)
-- Rugby League Live(2010 season)
-- Rugby League Live 2(2012 season)
-- Rugby League Live 3(2015 season)
-- Rugby League 26(2026 season)
+- Rugby League (2003 season)
+- Rugby League 2 (2005 season)
+- Rugby League Live (2010 season)
+- Rugby League Live 2 (2012 season)
+- Rugby League Live 3 (2015 season)
+- Rugby League 26 (2026 season)
 
 
 ### Volleyball
@@ -315,6 +315,7 @@ Note: Women's Ice Hockey since NHL 25
 - Volleyball Manager 2012 (2011-12 season)
 - Volleyball Manager 2013 (2013-14 season)
 - Volleyball Manager 2014 (2014-15 season)
+- Volleyball Manager 2014 (2020/2021 mod)(2020-21 season)
 - Setter: Volleyball Manager 27 (2026-27 season)
 
 
