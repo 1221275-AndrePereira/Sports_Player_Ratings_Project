@@ -170,8 +170,8 @@ Player ratings for every season(videogame) I could possibly find.
 - International Basketball Manager 2010/2011 (2010-11 season)
 - International Basketball Manager 22 (2021-22 season)
 - International Basketball Manager 23 (2022-23 season)
-- Pro Basketball Manager 2024 with real names mod(2023-24 season) - Includes women's basketball
-- International Basketball Manager 26 (2025-26 season)
+- Pro Basketball Manager 2024 with real names mod (2023-24 season) - Includes women's basketball
+- Pro Basketball Manager 2026 with real names mod (2025-26 season) - Includes women's basketball
 
 Note: NBA 2K14-2K17 also includes some EuroLeague teams
 Note: Women's Basketball in NBA 2K since NBA 2K20
@@ -246,57 +246,57 @@ Note: Women's Football since FIFA 23
 ### Ice Hockey
 
 - Past NHL seasons including 1993-94 season will be added using Franchise Hockey Manager
-- NHL 93(1991-92 season)
-- NHL 94(1992-93 season)
-- NHL 95(1994-95 season)
-- NHL 96(1995-96 season)
-- NHL 97(1996-97 season)
-- NHL 98(1997-98 season)
-- NHL 99(1998-99 season)
-- NHL 2000(1999-00 season)
-- NHL 2001(2000-01 season)
-- NHL 2002(2001-02 season)
-- NHL 2003(2002-03 season)
-- NHL 2004(2003-04 season)
-- NHL 2005(2004-05 season) - Season not played irl due to lockout
-- NHL 06(2005-06 season)
-- NHL 07(2006-07 season)
-- NHL 08(2007-08 season)
-- NHL 09(2008-09 season)
-- NHL 10(2009-10 season)
-- NHL 11(2010-11 season)
-- NHL 12(2011-12 season)
-- NHL 13(2012-13 season)
-- NHL 14(2013-14 season)
-- NHL 15(2014-15 season)
-- NHL 16(2015-16 season)
-- NHL 17(2016-17 season)
-- NHL 18(2017-18 season)
-- NHL 19(2018-19 season)
-- NHL 20(2019-20 season)
-- NHL 21(2020-21 season)
-- NHL 22(2021-22 season)
-- NHL 23(2022-23 season)
-- NHL 24(2023-24 season)
-- NHL 25(2024-25 season)
-- NHL 26(2025-26 season)
-- NHL 27(2026-27 season)
+- NHL 93 (1991-92 season)
+- NHL 94 (1992-93 season)
+- NHL 95 (1994-95 season)
+- NHL 96 (1995-96 season)
+- NHL 97 (1996-97 season)
+- NHL 98 (1997-98 season)
+- NHL 99 (1998-99 season)
+- NHL 2000 (1999-00 season)
+- NHL 2001 (2000-01 season)
+- NHL 2002 (2001-02 season)
+- NHL 2003 (2002-03 season)
+- NHL 2004 (2003-04 season)
+- NHL 2005 (2004-05 season) - Season not played irl due to lockout
+- NHL 06 (2005-06 season)
+- NHL 07 (2006-07 season)
+- NHL 08 (2007-08 season)
+- NHL 09 (2008-09 season)
+- NHL 10 (2009-10 season)
+- NHL 11 (2010-11 season)
+- NHL 12 (2011-12 season)
+- NHL 13 (2012-13 season)
+- NHL 14 (2013-14 season)
+- NHL 15 (2014-15 season)
+- NHL 16 (2015-16 season)
+- NHL 17 (2016-17 season)
+- NHL 18 (2017-18 season)
+- NHL 19 (2018-19 season)
+- NHL 20 (2019-20 season)
+- NHL 21 (2020-21 season)
+- NHL 22 (2021-22 season)
+- NHL 23 (2022-23 season)
+- NHL 24 (2023-24 season)
+- NHL 25 (2024-25 season)
+- NHL 26 (2025-26 season)
+- NHL 27 (2026-27 season)
 
 Note: Since NHL 2004 some other leagues are present in NHL videogames
 Note: Women's Ice Hockey since NHL 25
 
 ### Rugby
 
-- Rugby 06(2005-06 season)
-- Rugby 08(2007-08 season)
-- Rugby Challenge(2010-11 season)
-- Rugby Challenge 2(2012-13 season)
-- Rugby Challenge 3(2015-16 season)
-- Rugby 15(2014-15 season)
-- Rugby 18(2017-18 season)
-- Rugby 20(2019-20 season)
-- Rugby 22(2021-22 season)
-- Rugby 25(2024-25 season)
+- Rugby 06 (2005-06 season)
+- Rugby 08 (2007-08 season)
+- Rugby Challenge (2010-11 season)
+- Rugby Challenge 2 (2012-13 season)
+- Rugby 15 (2014-15 season)
+- Rugby Challenge 3 (2015-16 season)
+- Rugby 18 (2017-18 season)
+- Rugby 20 (2019-20 season)
+- Rugby 22 (2021-22 season)
+- Rugby 25 (2024-25 season)
 
 ### Rugby League
 
