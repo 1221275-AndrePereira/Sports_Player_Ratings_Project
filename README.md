@@ -289,7 +289,7 @@ Note: Women's Ice Hockey since NHL 25
 
 - Rugby 06 (2005-06 season)
 - Rugby 08 (2007-08 season)
-- Rugby Challenge (2010-11 season)
+- Rugby Challenge (2011-12 season)
 - Rugby Challenge 2 (2012-13 season)
 - Rugby 15 (2014-15 season)
 - Rugby Challenge 3 (2015-16 season)
