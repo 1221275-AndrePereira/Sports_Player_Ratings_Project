@@ -303,7 +303,6 @@ Note: Women's Ice Hockey since NHL 25
 
 ### Rugby League
 
-- Rugby League 2 (2005 season)
 - Rugby League 2: World Cup Edition (2008 season)
 - Rugby League Challenge (2009 season)
 - Rugby League Live (2010 season)
