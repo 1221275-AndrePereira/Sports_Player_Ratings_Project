@@ -303,9 +303,6 @@ Note: Women's Ice Hockey since NHL 25
 
 ### Rugby League
 
-- Rugby League Challenge (2009 season)
-- Rugby League Live (2010 season)
-- Rugby League Live 2 (2012 season)
 - Rugby League Live 3 (2015 season)
 - Rugby League 26 (2026 season)
 
