@@ -192,6 +192,10 @@ Note: Women's Basketball in NBA 2K since NBA 2K20
 - Pro Cycling Manager 22 (World DB)(2022 season)
 - Pro Cycling Manager 24 (World DB)(2024 season)
 
+### Floorball
+
+- Floorball League 2010
+
 ### Football
 
 - FIFA 96(1994-95 season) - Dennis Bergkamp still in Inter Milan
@@ -301,6 +305,8 @@ Note: Women's Ice Hockey since NHL 25
 
 - Rugby League (2003 season)
 - Rugby League 2 (2005 season)
+- Rugby League 2: World Cup Edition (2008 season)
+- Rugby League Challenge (2009 season)
 - Rugby League Live (2010 season)
 - Rugby League Live 2 (2012 season)
 - Rugby League Live 3 (2015 season)
