@@ -70,13 +70,13 @@ Player ratings for every season(videogame) I could possibly find.
 
 ### Australian Rules Football
 
-- AFL Premiership 2006(2006 season)
-- AFL Challenge (2009 season)
-- AFL Live(2011 season)
-- AFL Evolution 2(2020 season)
-- AFL Evolution 2(2021 season)
-- AFL 23(2023 season)
-- AFL 26(2025 season)
+- AFL Premiership 2006 (2006 season)
+- AFL Live (2011 season)
+- AFL Live 2 (2013 season)
+- AFL Evolution 2 (2020 season)
+- AFL Evolution 2 (2021 season)
+- AFL 23 (2023 season)
+- AFL 26 (2025 season)
 
 ### Baseball
 
