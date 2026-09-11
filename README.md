@@ -71,7 +71,6 @@ Player ratings for every season(videogame) I could possibly find.
 ### Australian Rules Football
 
 - AFL Premiership 2006(2006 season)
-- AFL Premiership 2007(2007 season)
 - AFL Challenge (2009 season)
 - AFL Live(2011 season)
 - AFL Evolution 2(2020 season)
