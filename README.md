@@ -163,6 +163,11 @@ Player ratings for every season(videogame) I could possibly find.
 
 - Pro Basket Manager 08 (2007-08 season)
 - International Basketball Manager 2010/2011 (2010-11 season)
+- PCF 12 (2011-12 season)
+- PCF 14 (2013-14 season)
+- NBA 2K15 (2014-15 season)
+- Sportando Basket Manager 2016 (2015-16 season)
+- NBA 2K17 (2016-17 season)
 - International Basketball Manager 22 (2021-22 season)
 - International Basketball Manager 23 (2022-23 season)
 - Pro Basketball Manager 2024 with real names mod (2023-24 season) - Includes women's basketball
