@@ -194,7 +194,7 @@ Note: Women's Basketball in NBA 2K since NBA 2K20
 
 ### Floorball
 
-- Floorball League 2010
+- Floorball League 2010 (2010-11 season)
 
 ### Football
 
@@ -304,7 +304,7 @@ Note: Women's Ice Hockey since NHL 25
 ### Rugby League
 
 - Rugby League Live 3 (2015 season)
-- Rugby League 26 (2026 season)
+- Rugby League 26 (2025 season)
 
 
 ### Volleyball
