@@ -174,10 +174,10 @@ Note: Women's Basketball in NBA 2K since NBA 2K20
 
 ### Cricket
 
-- Cricket 19
-- Cricket 22
-- Cricket 24(With Academy)
-- Cricket 26
+- Cricket 19 - Includes women's cricket
+- Cricket 22 - Includes women's cricket
+- Cricket 24(With Academy) - Includes women's cricket
+- Cricket 26 - Includes women's cricket
 
 ### Cycling
 
@@ -300,7 +300,7 @@ Note: Women's Ice Hockey since NHL 25
 ### Rugby League
 
 - Rugby League Live 3 (2015 season)
-- Rugby League 26 (2025 season)
+- Rugby League 26 (2025 season) - Includes women's Rugby League
 
 
 ### Volleyball
