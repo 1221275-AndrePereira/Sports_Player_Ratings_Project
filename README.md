@@ -193,8 +193,14 @@ Note: Women's Basketball in NBA 2K since NBA 2K20
 - Pro Cycling Manager 2009 (2009 season)
 - Pro Cycling Manager 2012 (2012 season)
 - Pro Cycling Manager 2013 (2013 season)
-- Pro Cycling Manager 22 (2022 season)
+- Pro Cycling Manager 2016 (2016 season)
+- Pro Cycling Manager 2017 (2017 season)
+- Pro Cycling Manager 2021 (2021 season)
+- Pro Cycling Manager 2022 (2022 season)
+- Pro Cycling Manager 2023 (2023 season)
 - Pro Cycling Manager 24 (2024 season)
+- Pro Cycling Manager 25 (2025 season)
+- Pro Cycling Manager 25 (2026 season)
 
 ### Floorball
 
