@@ -189,6 +189,8 @@ Note: Women's Basketball in NBA 2K since NBA 2K20
 - Cycling Manager 4 (2004 season)
 - Pro Cycling Manager (2005 season)
 - Pro Cycling Manager 2006 (2006 season)
+- Pro Cycling Manager 2008 (2008 season)
+- Pro Cycling Manager 2009 (2009 season)
 - Pro Cycling Manager 22 (World DB)(2022 season)
 - Pro Cycling Manager 24 (World DB)(2024 season)
 
