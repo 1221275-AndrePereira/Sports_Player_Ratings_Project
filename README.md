@@ -185,6 +185,8 @@ Note: Women's Basketball in NBA 2K since NBA 2K20
 
 ### Cycling
 
+- Cycling Manager (2001 season)
+- Cycling Manager 2 (2002 season)
 - Cycling Manager 3 (2003 season)
 - Cycling Manager 4 (2004 season)
 - Pro Cycling Manager (2005 season)
@@ -208,7 +210,7 @@ Note: Women's Basketball in NBA 2K since NBA 2K20
 - Pro Cycling Manager 2023 (2023 season)
 - Pro Cycling Manager 24 (2024 season)
 - Pro Cycling Manager 25 (2025 season)
-- Pro Cycling Manager 25 (2026 season)
+- Pro Cycling Manager 26 (2026 season)
 
 ### Floorball
 
