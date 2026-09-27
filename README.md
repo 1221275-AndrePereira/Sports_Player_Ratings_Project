@@ -162,6 +162,10 @@ Player ratings for every season(videogame) I could possibly find.
 - NCAA Basketball 10(2009-10 season)
 
 - PC Basket 3.0 (1994-95 season)
+- PC Basket 4.0 (1995-96 season)
+- PC Basket 4.5 (1996-97 season)
+- PC Basket 6.0 (1997-98 season)
+- PC Basket 6.5 (1998-99 season)
 - Pro Basket Manager 08 (2007-08 season)
 - International Basketball Manager 2010/2011 (2010-11 season)
 - PCF 12 (2011-12 season)
