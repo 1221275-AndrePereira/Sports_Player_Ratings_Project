@@ -161,6 +161,7 @@ Player ratings for every season(videogame) I could possibly find.
 - NCAA Basketball 09(2008-09 season)
 - NCAA Basketball 10(2009-10 season)
 
+- PC Basket 3.0 (1994-95 season)
 - Pro Basket Manager 08 (2007-08 season)
 - International Basketball Manager 2010/2011 (2010-11 season)
 - PCF 12 (2011-12 season)
@@ -218,8 +219,10 @@ Note: Women's Basketball in NBA 2K since NBA 2K20
 
 ### Football
 
+- PC Fútbol 2.0 (1993-94 season) - Only Spanish league
 - FIFA 96(1994-95 season) - Dennis Bergkamp still in Inter Milan
 - FIFA 97(1995-96 season) - Alan Shearer still in Blackburn Rovers
+- PC Fútbol 5.0 (1996-97 season)
 - FIFA 98(1997-98 season)
 - FIFA 99(1998-99 season)
 - FIFA 2000(1999-00 season)
